@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>浅入Generator函数 | xijiajie博客</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.946c16b4.css" as="style"><link rel="preload" href="/assets/js/app.35f1b580.js" as="script"><link rel="preload" href="/assets/js/3.cf155257.js" as="script"><link rel="preload" href="/assets/js/1.83093b38.js" as="script"><link rel="preload" href="/assets/js/21.df3b10a9.js" as="script"><link rel="prefetch" href="/assets/js/10.e3af44cc.js"><link rel="prefetch" href="/assets/js/11.9871da72.js"><link rel="prefetch" href="/assets/js/12.78830978.js"><link rel="prefetch" href="/assets/js/13.b57f0df1.js"><link rel="prefetch" href="/assets/js/14.a3b3c408.js"><link rel="prefetch" href="/assets/js/15.a89c2815.js"><link rel="prefetch" href="/assets/js/16.23dd7ee3.js"><link rel="prefetch" href="/assets/js/17.2b80b0b7.js"><link rel="prefetch" href="/assets/js/18.09fb8002.js"><link rel="prefetch" href="/assets/js/19.f62f4aa8.js"><link rel="prefetch" href="/assets/js/20.8cd7a96d.js"><link rel="prefetch" href="/assets/js/22.7b117d55.js"><link rel="prefetch" href="/assets/js/23.1bb1d877.js"><link rel="prefetch" href="/assets/js/24.07c29b5c.js"><link rel="prefetch" href="/assets/js/25.a2e840e6.js"><link rel="prefetch" href="/assets/js/26.376433ac.js"><link rel="prefetch" href="/assets/js/27.93c4b784.js"><link rel="prefetch" href="/assets/js/28.7195bba0.js"><link rel="prefetch" href="/assets/js/29.3063f928.js"><link rel="prefetch" href="/assets/js/30.ae018488.js"><link rel="prefetch" href="/assets/js/31.aab5f0f1.js"><link rel="prefetch" href="/assets/js/4.49868440.js"><link rel="prefetch" href="/assets/js/5.49a1808f.js"><link rel="prefetch" href="/assets/js/6.fd16ea38.js"><link rel="prefetch" href="/assets/js/7.6448f4d1.js"><link rel="prefetch" href="/assets/js/8.225dd7ec.js"><link rel="prefetch" href="/assets/js/9.93430ad7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.946c16b4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>xijiajie博客</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>xijiajie</span>
+            
+          <span data-v-64685f0e>2021 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="xijiajie博客" class="logo"> <span class="site-name">xijiajie博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      目录索引
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node/" class="nav-link"><i class="iconfont undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Others/" class="nav-link"><i class="iconfont undefined"></i>
+  Others
+</a></li><li class="dropdown-item"><!----> <a href="/categories/TypeScript/" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="iconfont undefined"></i>
+  webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签索引
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/blogs/views/messageBoard.html" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言板
+</a></div><div class="nav-item"><a href="https://github.com/wohaidingdezhu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    xijiajie
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>18</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>7</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      目录索引
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node/" class="nav-link"><i class="iconfont undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Others/" class="nav-link"><i class="iconfont undefined"></i>
+  Others
+</a></li><li class="dropdown-item"><!----> <a href="/categories/TypeScript/" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="iconfont undefined"></i>
+  webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签索引
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/blogs/views/messageBoard.html" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言板
+</a></div><div class="nav-item"><a href="https://github.com/wohaidingdezhu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Js-基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/javascript/js-base/1.html" class="sidebar-link">深入浅出this指向</a></li><li><a href="/blogs/javascript/js-base/2.html" class="sidebar-link">如何模拟实现一个 bind 的效果？</a></li><li><a href="/blogs/javascript/js-base/3.html" class="sidebar-link">如何实现一个 call/apply 函数？</a></li><li><a href="/blogs/javascript/js-base/4.html" class="sidebar-link">优化丑陋的代码篇</a></li><li><a href="/blogs/javascript/js-base/5.html" class="sidebar-link">深入浅出Promise对象</a></li><li><a href="/blogs/javascript/js-base/6.html" aria-current="page" class="active sidebar-link">浅入Generator函数</a></li><li><a href="/blogs/javascript/js-base/7.html" class="sidebar-link">手写防抖节流</a></li><li><a href="/blogs/javascript/js-base/8.html" class="sidebar-link">面试</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Js-进阶</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>浅入Generator函数</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>xijiajie</span>
+            
+          <span data-v-64685f0e>2021 - </span>
+          2022
+        </a></span></div></div> <div data-v-2d5f533b><main class="page" style="padding-right:0;"><div class="page-title" style="display:none;"><h1 class="title">浅入Generator函数</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>xijiajie</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2021-12-14</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/blogs/javascript/js-base/6.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>JavaScript</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// ECMAScript 6 - Generator</span>
+
+<span class="token comment">/**
+ * Generator是ES6引入的，主要用于异步编程
+ * 与普通函数的书写不同，function与函数名之间有一个*
+ * 他是可以暂停执行的，之所以要加* ，是为了区别
+ * Generator函数内部使用yield语句，可以定义不同的内部状态；
+ * 本质上 Generator函数就是一个封装的异步任务，或者说异步任务的容器
+ * yield命令是异步不同阶段的分界线（交出函数的执行权）
+ * .next方法去启动，可以理解为一个'启动'，作用：分阶段去执行Generator
+ * 每次调用.next方法，返回一个对象 {  value:当前的yield     done:boolean    },表示当前阶段的信息
+ * 每个迭代器之间是相互独立的，作用域独立。
+ * 每当你调用的一个迭代器内部的.next()方法，Generator函数内部的指针，就是从上一次停下的地方，继续运行，知道遇到下一个yield
+ * 因为yield语句都要走一遍，yield就像录音机暂停,.next()就像继续。
+ * yield语句只能在Generator,普通函数不行。
+ * .next方法可以传参数（这个地方不太好理解）:传入的参数是上一个yield返回的值覆盖掉。
+ * 第一个.next();是启动器，在它之前没有yield语句，所以给第一个.next()传参是没有意义的。
+ * 支持for of 循环 用来迭代Generator执行是生成的迭代对象
+ */</span>
+
+<span class="token comment">// function xxfn (){</span>
+<span class="token comment">//     console.log('xxfn');</span>
+<span class="token comment">// }</span>
+<span class="token comment">// xxfn();</span>
+
+<span class="token comment">//   function* xxfn() {</span>
+<span class="token comment">//     yield &quot;a&quot;;</span>
+<span class="token comment">//     yield &quot;b&quot;;</span>
+<span class="token comment">//     yield &quot;c&quot;;</span>
+<span class="token comment">//     return &quot;d end..&quot;;</span>
+<span class="token comment">//   }</span>
+
+<span class="token comment">//   let fn = xxfn();//指向Generator内部的指针</span>
+<span class="token comment">//   console.log(fn);</span>
+<span class="token comment">//   console.log(fn.next());//{value: &quot;a&quot;, done: false}</span>
+<span class="token comment">//   console.log(fn.next());//{value: &quot;b&quot;, done: false}</span>
+<span class="token comment">//   console.log(fn.next());//{value: &quot;c&quot;, done: false}</span>
+<span class="token comment">//   console.log(fn.next());//{value: &quot;d end..&quot;, done: true}</span>
+
+<span class="token comment">//   // 以及执行完了，没意义了</span>
+<span class="token comment">//   console.log(fn.next());//{value: &quot;undefind&quot;, done: true}</span>
+
+<span class="token comment">//   function* xxfn() {</span>
+<span class="token comment">//     var _n = 1;</span>
+<span class="token comment">//     yield ++ _n;</span>
+<span class="token comment">//     yield ++ _n;</span>
+<span class="token comment">//     yield ++ _n;</span>
+<span class="token comment">//   }</span>
+
+<span class="token comment">//   var aa = xxfn();//迭代器对象的引用</span>
+<span class="token comment">//   var bb = xxfn();</span>
+<span class="token comment">//   console.log(aa.next());</span>
+<span class="token comment">//   console.log(aa.next());</span>
+<span class="token comment">//   console.log(bb.next());</span>
+<span class="token comment">//   console.log(aa.next());</span>
+
+<span class="token comment">//   function* xxfn() {</span>
+<span class="token comment">//     var _n = 1;</span>
+<span class="token comment">//     var _v = yield _n + 22;</span>
+<span class="token comment">//     console.log(&quot;aaa---:&quot; + _v);</span>
+<span class="token comment">//     yield ++_n;</span>
+<span class="token comment">//     yield ++_n;</span>
+<span class="token comment">//   }</span>
+
+<span class="token comment">//   let _xxfn = xxfn();</span>
+
+<span class="token comment">//   console.log(_xxfn.next()); //23 1+22;</span>
+
+<span class="token comment">//   var _v = yield _n +22;</span>
+<span class="token comment">/**
+ * 这是一个赋值运算，到这个yield的时候，还没有运行给_v赋值的阶段；
+ * 因为到第一个yield就停了；
+ */</span>
+
+<span class="token comment">/**
+ * 接受一个参数，把上一个yield语句覆盖了，上一个yield的值是 yield = _n + 22;
+ * 传入'abc' 。就变成了 yield = 'abc' 又赋值给了_v
+ * 所以打印了是 abc
+ */</span>
+<span class="token comment">//   console.log(_xxfn.next(&quot;abc&quot;));</span>
+
+<span class="token comment">/**
+ * 虽然覆盖了上一直yield,但是他并没有修改之前声明的变量,_n的值 还是1；
+ */</span>
+<span class="token comment">//   console.log(_xxfn.next());</span>
+
+<span class="token keyword">function</span><span class="token operator">*</span> <span class="token function">xxfn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">yield</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">yield</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">yield</span> <span class="token string">&quot;c&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token string">&quot;d end..&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> _xx <span class="token operator">=</span> <span class="token function">xxfn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token keyword">of</span> _xx<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// a b c</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/22/2021, 11:47:37 PM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/media/UntilItHappensToYou.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p3fx.kgimg.com/stdmusic/240/20201014/20201014115507894207.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p3fx.kgimg.com/stdmusic/240/20201014/20201014115507894207.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>Until It Happens To You</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Sasha Alex Sloan</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><canvas id="vuepress-canvas-cursor"></canvas><!----><div class="RibbonAnimation"></div></div></div>
+    <script src="/assets/js/app.35f1b580.js" defer></script><script src="/assets/js/3.cf155257.js" defer></script><script src="/assets/js/1.83093b38.js" defer></script><script src="/assets/js/21.df3b10a9.js" defer></script>
+  </body>
+</html>

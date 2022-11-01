@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git的基本使用 | xijiajie博客</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.946c16b4.css" as="style"><link rel="preload" href="/assets/js/app.35f1b580.js" as="script"><link rel="preload" href="/assets/js/3.cf155257.js" as="script"><link rel="preload" href="/assets/js/1.83093b38.js" as="script"><link rel="preload" href="/assets/js/26.376433ac.js" as="script"><link rel="prefetch" href="/assets/js/10.e3af44cc.js"><link rel="prefetch" href="/assets/js/11.9871da72.js"><link rel="prefetch" href="/assets/js/12.78830978.js"><link rel="prefetch" href="/assets/js/13.b57f0df1.js"><link rel="prefetch" href="/assets/js/14.a3b3c408.js"><link rel="prefetch" href="/assets/js/15.a89c2815.js"><link rel="prefetch" href="/assets/js/16.23dd7ee3.js"><link rel="prefetch" href="/assets/js/17.2b80b0b7.js"><link rel="prefetch" href="/assets/js/18.09fb8002.js"><link rel="prefetch" href="/assets/js/19.f62f4aa8.js"><link rel="prefetch" href="/assets/js/20.8cd7a96d.js"><link rel="prefetch" href="/assets/js/21.df3b10a9.js"><link rel="prefetch" href="/assets/js/22.7b117d55.js"><link rel="prefetch" href="/assets/js/23.1bb1d877.js"><link rel="prefetch" href="/assets/js/24.07c29b5c.js"><link rel="prefetch" href="/assets/js/25.a2e840e6.js"><link rel="prefetch" href="/assets/js/27.93c4b784.js"><link rel="prefetch" href="/assets/js/28.7195bba0.js"><link rel="prefetch" href="/assets/js/29.3063f928.js"><link rel="prefetch" href="/assets/js/30.ae018488.js"><link rel="prefetch" href="/assets/js/31.aab5f0f1.js"><link rel="prefetch" href="/assets/js/4.49868440.js"><link rel="prefetch" href="/assets/js/5.49a1808f.js"><link rel="prefetch" href="/assets/js/6.fd16ea38.js"><link rel="prefetch" href="/assets/js/7.6448f4d1.js"><link rel="prefetch" href="/assets/js/8.225dd7ec.js"><link rel="prefetch" href="/assets/js/9.93430ad7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.946c16b4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>xijiajie博客</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>xijiajie</span>
+            
+          <span data-v-64685f0e>2021 - </span>
+          2022
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="xijiajie博客" class="logo"> <span class="site-name">xijiajie博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      目录索引
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node/" class="nav-link"><i class="iconfont undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Others/" class="nav-link"><i class="iconfont undefined"></i>
+  Others
+</a></li><li class="dropdown-item"><!----> <a href="/categories/TypeScript/" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="iconfont undefined"></i>
+  webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签索引
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/blogs/views/messageBoard.html" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言板
+</a></div><div class="nav-item"><a href="https://github.com/wohaidingdezhu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/avatar.jpg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    xijiajie
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>18</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>7</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      目录索引
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/node/" class="nav-link"><i class="iconfont undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/categories/Others/" class="nav-link"><i class="iconfont undefined"></i>
+  Others
+</a></li><li class="dropdown-item"><!----> <a href="/categories/TypeScript/" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/categories/webpack/" class="nav-link"><i class="iconfont undefined"></i>
+  webpack
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签索引
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/blogs/views/messageBoard.html" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言板
+</a></div><div class="nav-item"><a href="https://github.com/wohaidingdezhu" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Others</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blogs/others/1.html" aria-current="page" class="active sidebar-link">Git的基本使用</a></li><li><a href="/blogs/others/2.html" class="sidebar-link">Docker的基本使用</a></li><li><a href="/blogs/others/3.html" class="sidebar-link">Canvas的基本使用</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Git的基本使用</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>xijiajie</span>
+            
+          <span data-v-64685f0e>2021 - </span>
+          2022
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">Git的基本使用</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>xijiajie</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2021-12-17</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/blogs/others/1.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>Git</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><p><a href="https://git-scm.com/book/zh/v2/" target="_blank" rel="noopener noreferrer">GIT 官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Git 使用图
+<img src="/git/image.png" alt="project"></p> <p>Git flow
+<img src="/git/command.png" alt="project"></p> <h2 id="git-分支管理"><a href="#git-分支管理" class="header-anchor">#</a> git 分支管理</h2> <ol><li>master 主分支</li> <li>develop 日常开发分支，用来合并更新，修改 bug</li> <li>feature 新需求分支，基于 develop 开发</li> <li>relase 提测，准备发布</li> <li>hotfix 基于 master 拉取进行快速发布，合并到 master, develop</li></ol> <h2 id="git-操作命令"><a href="#git-操作命令" class="header-anchor">#</a> git 操作命令</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token number">1</span><span class="token punctuation">.</span>cmd里面用的叫做 <span class="token constant">DOS</span><span class="token function">命令</span><span class="token punctuation">(</span>磁盘操作系统<span class="token punctuation">)</span>  cmd终端唤醒：win键 <span class="token operator">+</span> <span class="token constant">R</span><span class="token punctuation">,</span>输入cmd回车
+
+例如：路径的进入和退出
+    <span class="token literal-property property">输入d</span><span class="token operator">:</span>    进入d盘
+    cd目录名  进入目录
+    cd<span class="token punctuation">.</span><span class="token punctuation">.</span>  退出一级目录
+    注意：通过盘符的地址直接输入cmd进行对应目录位置。
+
+
+例如：目录的创建和删除、文件的创建和删除。
+    mkdir 创建目录
+    rmdir 删除目录
+    copy con index<span class="token punctuation">.</span>js 创建index<span class="token punctuation">.</span>js文本文件  回车结束 ctrl<span class="token operator">+</span>z结束
+    del 文件名 ：删除对应的文件
+
+例如：dir <span class="token function">列出当前目录的列表</span><span class="token punctuation">(</span>目录或文件<span class="token punctuation">)</span>
+例如：cls <span class="token function">清空</span><span class="token punctuation">(</span><span class="token constant">DOS</span><span class="token punctuation">)</span>终端命令
+例如：tab键补全
+
+<span class="token number">2.</span>安装git软件<span class="token punctuation">,</span><span class="token function">git用的是linux命令</span><span class="token punctuation">(</span>一路next<span class="token punctuation">,</span>直到结束<span class="token punctuation">)</span>
+window系统：任意目录，右键选择git bash进入linux命令操作
+cd 目录名  进入目录
+mkdir  创建目录   rmdir 删除目录
+ls  查看当前目录列表  dir
+clear 清空当前控制台
+rm <span class="token operator">-</span>rf  文件名称    删除某一个文件或是目录
+cat 文件名  打开文件
+touch <span class="token number">2</span><span class="token punctuation">.</span>txt 如果<span class="token number">2</span><span class="token punctuation">.</span>txt不存在，则创建空文件<span class="token number">2</span><span class="token punctuation">.</span>txt
+cd <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token operator">/</span> 返回上一级，注意后面的空格
+
+<span class="token constant">DOS</span>命令还是linux命令，通过方向键将输入的命令显示出来。
+ipconfig  <span class="token constant">DOS</span>和linux通用的查看ip地址
+
+    一<span class="token punctuation">.</span>版本管理工具：团队协作开发，每一次提交记录为一个版本。
+    <span class="token number">1.</span>版本管理的发展：<span class="token constant">CVS</span><span class="token operator">--</span><span class="token constant">SVN</span><span class="token operator">--</span><span class="token constant">GIT</span><span class="token punctuation">(</span>最好的<span class="token punctuation">)</span>
+    <span class="token constant">CVS</span>阶段弊端：每一次提交都会提交所有的文件，造成服务器压力<span class="token operator">--</span>完全被淘汰。
+
+    <span class="token constant">SVN</span>：每一次提交会和服务器进行对比，提交修改的文件。<span class="token constant">SVN</span>至今仍然在使用（集中式）
+    <span class="token constant">SVN</span>弊端：只有一个服务器，在脱离网络的情况下，无法进行相关操作。
+
+    <span class="token constant">GIT</span><span class="token function">：分布式的，每一个用户都有服务器</span><span class="token punctuation">(</span>本地<span class="token punctuation">)</span><span class="token punctuation">,</span>Git 是一个分布式的版本控制系统，在 Git 中即使用户离线，也能进行项目的提交和更新操作（本地服务器），等到下次连线中央服务器时进行整体的同步操作。
+
+
+    二<span class="token punctuation">.</span>学习git相关操作。
+    <span class="token number">1.</span>安装git软件。
+
+    <span class="token number">2.</span><span class="token function">main</span><span class="token punctuation">(</span>主分支<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">设置子分支</span><span class="token punctuation">(</span>开发重要的分支<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span>子分支开发完成，合并到主分支。
+        <span class="token operator">-</span> main：代码库应该有一个、且仅有一个主分支。所有提供给用户使用的正式版本，都在这个主分支上发布，Git主分支的名字，默认叫做main。它是自动建立的，版本库初始化以后，默认就是在主分支在进行开发。
+
+        <span class="token operator">-</span> Develop：自定义的开发分支。主分支只用来分布重大版本，日常开发应该在另一条分支上完成。我们把开发用的分支，叫做Develop。这个分支可以用来生成代码的最新隔夜版本（nightly）。如果想正式对外发布，就在main分支上，对Develop分支进行<span class="token string">&quot;合并&quot;</span>（merge）。
+
+        <span class="token operator">-</span> main和develop上面操作的命令是一致的。
+
+        注意：提交到远程仓库：git push origin 分支的名称
+                            git pull origin 分支的名称   更新代码。
+
+    <span class="token number">3.</span><span class="token function">无需创建中央服务器</span><span class="token punctuation">(</span>gitlab<span class="token punctuation">)</span>，使用第三方的网站实现 <span class="token operator">-</span> <span class="token function">利用github创建中央服务器</span><span class="token punctuation">(</span>仓库<span class="token punctuation">)</span>。
+        <span class="token operator">-</span> 第一步：进入github 注册。
+        <span class="token operator">-</span> <span class="token function">第二步：创建仓库</span><span class="token punctuation">(</span>服务器<span class="token punctuation">)</span>
+        <span class="token operator">-</span> <span class="token function">第三步：连接仓库的地址</span><span class="token punctuation">(</span>克隆仓库的地址<span class="token punctuation">)</span> https和ssh
+        <span class="token operator">-</span> <span class="token function">第四步：将本地的代码同步到远程的仓库</span><span class="token punctuation">(</span>github<span class="token punctuation">)</span> <span class="token operator">-</span> 命令
+            <span class="token operator">-</span> git clone 仓库的地址  将远程仓库的代码拉取到本地，同时本地和远程进行连接了。
+        <span class="token operator">-</span> <span class="token function">第五步：将本地工作区的内容提交到远程仓库</span><span class="token punctuation">(</span>工作区<span class="token operator">-</span><span class="token operator">&gt;</span>暂存区<span class="token operator">-</span><span class="token operator">&gt;</span>本地服务器<span class="token operator">-</span><span class="token operator">&gt;</span>远程仓库<span class="token punctuation">)</span>
+            <span class="token operator">-</span> git status 查看状态<span class="token punctuation">,</span>对比工作区和本地服务器的区别
+            <span class="token operator">-</span> git add <span class="token punctuation">.</span>  <span class="token function">将新增或者修改文件提交到暂存区</span><span class="token punctuation">(</span>临时存放<span class="token punctuation">,</span>方便撤回<span class="token punctuation">)</span>，命令后面的点表示所有的文件。
+            <span class="token operator">-</span> git commit <span class="token operator">-</span>m <span class="token string">&quot;提交的注释&quot;</span>   将暂存区的文件提交到本地服务器。
+                <span class="token operator">-</span> 问题：第一次提交设置用户邮箱和用户名。
+                git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>email <span class="token string">&quot;you@example.com&quot;</span>
+                git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>name <span class="token string">&quot;Your Name&quot;</span>
+                git config <span class="token operator">--</span>list 查看提交的信息
+            <span class="token operator">-</span> git push origin main <span class="token function">将本地服务器同步到远程仓库</span><span class="token punctuation">(</span>origin<span class="token operator">:</span>远程仓库默认的名称  main：主分支<span class="token punctuation">)</span>
+
+        问题：如果通过https连接仓库<span class="token punctuation">,</span>每一次和远程仓库通信需要输入用户名和密码。如何解决，改用ssh进行连接仓库。
+
+    <span class="token number">4.</span><span class="token function">ssh：秘钥</span><span class="token punctuation">(</span>通过公钥和私有进行匹配，一旦匹配上了，后续一直保持连接状态<span class="token punctuation">)</span>
+    <span class="token literal-property property">配置秘钥ssh</span><span class="token operator">:</span>生成两个秘钥，将公钥给匹配的github网站，私钥放置在本地。
+    <span class="token function">配置秘钥</span><span class="token punctuation">(</span>私钥在本地 <span class="token operator">-</span> 任意目录操作<span class="token punctuation">)</span>
+        第一步<span class="token punctuation">.</span>配置个人用户信息和电子邮件地址
+        git config   <span class="token operator">--</span>global   user<span class="token punctuation">.</span>name   <span class="token string">&quot;用户名&quot;</span>
+        git config   <span class="token operator">--</span>global   user<span class="token punctuation">.</span>email    <span class="token string">&quot;你的邮箱&quot;</span>
+        git config  <span class="token operator">--</span><span class="token function">list</span> <span class="token punctuation">(</span>查看所有配置项<span class="token punctuation">)</span>    q键退出
+        第二步<span class="token punctuation">.</span>如何目录输入如下命令：ssh<span class="token operator">-</span>keygen <span class="token operator">-</span>t rsa <span class="token operator">-</span><span class="token constant">C</span> <span class="token string">&quot;你的邮箱&quot;</span>   <span class="token operator">--</span>回车直到结束。已经生成ssh
+        第三步<span class="token punctuation">.</span>进入github配置公钥
+        cd  <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh <span class="token operator">:</span> 进入<span class="token punctuation">.</span>ssh目录
+        ls  显示目录的内容
+        cat  <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa<span class="token punctuation">.</span>pub   查看文件的内容
+        第四步：进入github网站<span class="token operator">--</span><span class="token operator">-</span>点击右上角小图片<span class="token operator">--</span><span class="token operator">-</span>settings<span class="token operator">--</span><span class="token operator">-</span>左侧菜单<span class="token constant">SSH</span> and <span class="token constant">GPG</span> keys
+
+
+
+    <span class="token number">5.</span><span class="token function">如果代码删除了，如何恢复。</span><span class="token punctuation">(</span>一旦出现此问题，千万不要去删除远程的仓库<span class="token punctuation">)</span>
+    git log 命令
+    git log查看提交日志 显示不全，通过回车键显示所有的提交日志，q键退出。
+
+    git reset <span class="token operator">--</span>hard commit_id     退到<span class="token operator">/</span>进到   指定commit_id的随机的哈希值
+    git push origin head <span class="token operator">--</span>force  强推到远程
+
+    空文件夹不支持上传。
+
+
+    <span class="token number">6.</span>将本地的任何目录同步到远程仓库。
+    前面的操作是先创建远程仓库，然后将远程仓库克隆到本地。
+    当前的操作是将本地的任何目录同步到远程仓库
+    git init  <span class="token operator">-</span> 创建了master分支
+    git add <span class="token punctuation">.</span>
+    git commit <span class="token operator">-</span>m <span class="token string">'first commit'</span>
+    git remote add origin git@github<span class="token punctuation">.</span>com<span class="token operator">:</span>pengshaohua<span class="token operator">/</span>login<span class="token punctuation">.</span><span class="token function">git</span><span class="token punctuation">(</span>新建远程仓库生成的地址<span class="token punctuation">)</span>
+    当前的目录要同步的地址，一旦执行完成，当前的开发目录和远程仓库连上了。
+    git pull <span class="token operator">--</span>rebase origin main <span class="token function">：更新连上的远程仓库里面的文件。</span><span class="token punctuation">(</span>main<span class="token punctuation">)</span>
+    git push <span class="token operator">-</span>u origin master ：将本地的文件提交到远程仓库
+    上面的命令仅仅是将本地开发目录变成远程仓库，其他的更新提交操作和前面的命令是一样的。
+    git push origin <span class="token operator">--</span><span class="token keyword">delete</span> branch 删除追踪分支
+
+    <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">报错:</span><span class="token template-punctuation string">`</span></span>
+    git branch <span class="token operator">--</span>set<span class="token operator">-</span>upstream<span class="token operator">-</span>to<span class="token operator">=</span><span class="token operator">&lt;</span>remote<span class="token operator">&gt;</span><span class="token operator">/</span><span class="token operator">&lt;</span>branch<span class="token operator">&gt;</span> master
+    git branch <span class="token operator">--</span>set<span class="token operator">-</span>upstream<span class="token operator">-</span>to<span class="token operator">=</span>origin<span class="token operator">/</span>master master
+
+    $ git pull
+    <span class="token literal-property property">fatal</span><span class="token operator">:</span> refusing to merge unrelated histories
+    出现这个问题的最主要原因还是在于本地仓库和远程仓库实际上是独立的两个仓库。假如我之前是直接clone的方式在本地建立起远程github仓库的克隆本地仓库就不会有这问题了。
+    git pull origin master <span class="token operator">--</span>allow<span class="token operator">-</span>unrelated<span class="token operator">-</span>histories
+    git push <span class="token operator">--</span>set<span class="token operator">-</span>upstream origin master
+
+    git reset <span class="token operator">--</span>hard <span class="token constant">HEAD</span><span class="token operator">^</span>
+    <span class="token literal-property property">fatal</span><span class="token operator">:</span> ambiguous argument <span class="token string">'^HEAD'</span><span class="token operator">:</span> unknown revision or path not <span class="token keyword">in</span> the working tree<span class="token punctuation">.</span>
+    Use <span class="token string">'--'</span> to separate paths from revisions<span class="token punctuation">,</span> like <span class="token keyword">this</span><span class="token operator">:</span>
+    <span class="token string">'git &lt;command&gt; [&lt;revision&gt;...] -- [&lt;file&gt;...]'</span>
+
+    因为cmd控制台中换行符默认是<span class="token operator">^</span>，而不是\ ，所以 <span class="token operator">^</span> 符号被git编译为换行符了，解决方案：
+
+    git reset <span class="token operator">--</span>hard <span class="token string">&quot;HEAD^&quot;</span>
+    git reset <span class="token operator">--</span>hard <span class="token constant">HEAD</span><span class="token operator">~</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/media/UntilItHappensToYou.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:200px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="https://p3fx.kgimg.com/stdmusic/240/20201014/20201014115507894207.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(https://p3fx.kgimg.com/stdmusic/240/20201014/20201014115507894207.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>Until It Happens To You</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>Sasha Alex Sloan</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div><canvas id="vuepress-canvas-cursor"></canvas><!----><div class="RibbonAnimation"></div></div></div>
+    <script src="/assets/js/app.35f1b580.js" defer></script><script src="/assets/js/3.cf155257.js" defer></script><script src="/assets/js/1.83093b38.js" defer></script><script src="/assets/js/26.376433ac.js" defer></script>
+  </body>
+</html>
