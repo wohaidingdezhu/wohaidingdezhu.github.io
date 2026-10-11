@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{528:function(t,n,e){"use strict";var i=e(529),s=e(44),o={extends:i.a,methods:{isLinkActive:function(t){return Object(s.f)(this.$route,this.$page.path+"#"+t.slug)}}},u=e(18),a=Object(u.a)(o,void 0,void 0,!1,null,null,null);n.a=a.exports}}]);
